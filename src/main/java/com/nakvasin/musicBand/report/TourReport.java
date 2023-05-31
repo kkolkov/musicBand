@@ -14,10 +14,10 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TourReport {
-    String groupName;
-    String programName;
-    String place;
-    LocalDate startDate;
-    LocalDate endDate;
-    List<Song> songs;
+    private String groupName;
+    private String programName;
+    private String place;
+    private LocalDate startDate;
+    private LocalDate endDate;
+    private List<Song> songs;
 }

@@ -4,7 +4,6 @@ import com.nakvasin.musicBand.dto.GroupDTO;
 import com.nakvasin.musicBand.entity.Group;
 import com.nakvasin.musicBand.entity.Member;
 import com.nakvasin.musicBand.repository.GroupRepository;
-import com.nakvasin.musicBand.repository.SongRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.ParameterizedTypeReference;

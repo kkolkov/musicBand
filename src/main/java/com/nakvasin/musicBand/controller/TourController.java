@@ -16,7 +16,6 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 @RequiredArgsConstructor
 public class TourController {
     private final TourService tourService;
-    private final TourReportService tourReportService;
     @Bean
     public RouterFunction<?> tourRoutes() {
         return route(GET("/tour/getLocationAndDuration/{groupId}").and(accept(MediaType.APPLICATION_JSON)), tourService::getLocationAndDuration)
