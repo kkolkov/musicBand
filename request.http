@@ -1,0 +1,55 @@
+### Год образования, страна группы данного названия
+GET http://127.0.0.1:8080/groups/getYearAndCountry/Metallica
+
+### Репертуар наиболее популярной группы
+GET http://127.0.0.1:8080/songs/getTopInChartRepertoire
+
+### Автор текста, композитор и дата создания песни с данным названием
+GET http://127.0.0.1:8080/songs/getLyricistComposerAndDateCreated/Back%20in%20Black
+
+### Место и продолжительность гастролей группы данного названия
+GET http://127.0.0.1:8080/tour/getLocationAndDuration/646d88c1ab58915f008cb565
+
+### Цена билета на концерт указанной группы
+GET http://127.0.0.1:8080/tour/getTicketPrice/646d88c1ab58915f008cb565
+
+### Состав исполнителей группы данного названия, их возраст и амплуа
+GET http://127.0.0.1:8080/groups/getGroupMembers/646d88c1ab58915f008cb566
+
+### Ввод новой группы
+POST http://127.0.0.1:8080/groups/newGroup/
+Content-Type: application/json
+
+{
+  "id": "646d88c1ab58915f008cb570",
+  "name": "Nightwish",
+  "year": 1996,
+  "country": "Finland",
+  "members": [
+    {
+      "name": "Tuomas Holopainen",
+      "age": 44,
+      "role": "Keyboards"
+    },
+    {
+      "name": "Marco Hietala",
+      "age": 55,
+      "role": "Bass"
+    },
+    {
+      "name": "Floor Jansen",
+      "age": 47,
+      "role": "Vocal"
+    }
+  ],
+  "chartPosition": 2
+}
+
+### Изменение положения группы в хит-параде
+POST http://127.0.0.1:8080/groups/Metallica/chart/7
+
+### Удаление информации об исполнителе, покинувшем группу
+DELETE http://127.0.0.1:8080/groups/Metallica/deleteMember/James%20Hetfield
+
+### Отчет о гастролях групп (название группы, место и сроки гастролей, репертуар с указанием авторов песен)
+GET http://127.0.0.1:8080/tour/getTourReport/

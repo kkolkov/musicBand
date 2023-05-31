@@ -1,0 +1,9 @@
+spring:
+  mongodb:
+    embedded:
+      # https://docs.spring.io/spring-boot/docs/2.7.12/reference/html/data.html#data.nosql.mongodb.embedded
+      # https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo/blob/de.flapdoodle.embed.mongo-3.4.11/src/main/java/de/flapdoodle/embed/mongo/distribution/Version.java
+      version: 6.0.1
+  data:
+    mongodb:
+      port: '53725'
